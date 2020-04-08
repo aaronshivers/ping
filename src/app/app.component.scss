@@ -5,3 +5,12 @@
   padding: 3rem;
   width: 100%;
 }
+
+@media (min-width: 768px) {
+  .container {
+    margin: 0 auto;
+    max-width: 768px;
+    padding: 6rem;
+    grid-gap: 6rem;
+  }
+}

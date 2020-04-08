@@ -52,3 +52,17 @@
   border: none;
   border-radius: 3rem;
 }
+
+@media (min-width: 768px) {
+  .contact__heading {
+    font-size: 4.5rem;
+  }
+
+  .contact__body {
+    font-size: 2rem;
+  }
+
+  .contact__form {
+    grid-template-columns: 2fr 1fr;
+  }
+}

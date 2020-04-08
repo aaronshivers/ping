@@ -26,3 +26,17 @@
 .footer__icon {
   filter: invert(46%) sepia(40%) saturate(3963%) hue-rotate(208deg) brightness(98%) contrast(95%);
 }
+
+@media (min-width: 768px) {
+  .footer {
+    grid-gap: 3rem;
+  }
+
+  .footer__icon {
+    width: 3rem;
+  }
+
+  .footer__copyright {
+    font-size: 1.5rem;
+  }
+}
