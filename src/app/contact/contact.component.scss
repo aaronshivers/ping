@@ -1,0 +1,54 @@
+@import "src/assets/scss/variables";
+
+.contact {
+  display: grid;
+  grid-gap: 3rem;
+  text-align: center;
+}
+
+.contact__heading {
+  color: $gray;
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+.heading__accent {
+  color: $blue-very-dark;
+  font-weight: bold;
+}
+
+.contact__body {
+  font-size: 1.4rem;
+}
+
+.contact__form {
+  display: grid;
+  grid-gap: 1rem;
+  justify-content: center;
+}
+
+.form__input {
+  color: $blue-pale;
+  font-size: 1.3rem;
+  padding: 1.5rem 6rem;
+  border: 1px solid $blue-pale;
+  outline: none;
+  border-radius: 3rem;
+}
+
+.form__input::placeholder {
+  color: $blue-pale;
+}
+
+.form__button {
+  color: white;
+  background-color: $blue;
+  font-size: 1.3rem;
+  font-family: $font-main;
+  font-weight: bold;
+  padding: 1.5rem 6rem;
+  box-shadow: 5px 0 5px $blue-pale;
+  outline: none;
+  border: none;
+  border-radius: 3rem;
+}

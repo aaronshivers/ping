@@ -1,0 +1,28 @@
+@import "src/assets/scss/variables";
+
+.footer {
+  display: grid;
+  grid-gap: 2rem;
+  text-align: center;
+}
+
+.footer__list-item {
+  display: inline;
+}
+
+.footer__list-item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.footer__icon {
+  width: 2rem;
+}
+
+.footer__copyright {
+  color: $gray;
+  font-size: 1rem;
+}
+
+.footer__icon {
+  filter: invert(46%) sepia(40%) saturate(3963%) hue-rotate(208deg) brightness(98%) contrast(95%);
+}
