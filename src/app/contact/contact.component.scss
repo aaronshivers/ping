@@ -28,16 +28,27 @@
 }
 
 .form__input {
-  color: $blue-pale;
   font-size: 1.3rem;
-  padding: 1.5rem 6rem;
+  padding: 1.5rem 3rem;
   border: 1px solid $blue-pale;
   outline: none;
   border-radius: 3rem;
+  width: 100%;
 }
 
 .form__input::placeholder {
   color: $blue-pale;
+}
+
+.invalid-input {
+  border-color: $red-light;
+}
+
+.form__hint {
+  color: $red-light;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 1rem 0;
 }
 
 .form__button {
@@ -46,12 +57,18 @@
   font-size: 1.3rem;
   font-family: $font-main;
   font-weight: bold;
-  padding: 1.5rem 6rem;
+  padding: 1.5rem 3rem;
   box-shadow: 5px 0 5px $blue-pale;
   outline: none;
   border: none;
   border-radius: 3rem;
+  width: 100%;
 }
+
+.invalid-button {
+  background-color: $blue-pale;
+}
+
 
 @media (min-width: 768px) {
   .contact__heading {
@@ -64,5 +81,21 @@
 
   .contact__form {
     grid-template-columns: 2fr 1fr;
+  }
+
+  .input-wrapper {
+    text-align: left;
+  }
+
+  .form__input {
+    height: 5rem;
+  }
+
+  .form__hint {
+    margin-left: 3rem;
+  }
+
+  .form__button {
+    height: 5rem;
   }
 }

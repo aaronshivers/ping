@@ -3,11 +3,25 @@
     We are launching <span class="heading__accent">soon!</span>
   </h1>
   <p class="contact__body">Subscribe and get notified</p>
-  <form class="contact__form">
-    <input
-      class="form__input"
-      placeholder="Your email address"
-    >
-    <button class="form__button">Notify Me</button>
+  <form
+    #f="ngForm"
+    class="contact__form"
+  >
+    <div class="input-wrapper">
+      <input
+        #email="ngModel"
+        [class.invalid-input]="email.invalid && email.touched"
+        class="form__input"
+        email
+        name="email"
+        ngModel
+        placeholder="Your email address"
+      >
+      <p
+        *ngIf="email.invalid && email.touched"
+        class="form__hint"
+      >Please provide a valid email address</p>
+    </div>
+    <button [disabled]="f.invalid" [class.invalid-button]="f.invalid" class="form__button">Notify Me</button>
   </form>
 </section>
